@@ -1,14 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Personal Web Page</title>
+  <meta charset="UTF-8">
+  <title>Your Name's Web Page</title>
+  <style>
+    /* Basic styling to center content and make it look neat */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #333;
+      margin-bottom: 1rem;
+    }
+    .bio {
+      margin: 1rem 0;
+      line-height: 1.5;
+    }
+    a.resume-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    a.resume-link:hover {
+      background: #555;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, I’m Parth Patel</h1>
-    <p>Short bio: I’m a student at Old Dominion University pursuing my Masters in Computer Science. I will be interning for AT&T over the summer in hopes for a full time position.
-    In my free time I enjoy playing video games such as call of duty, crypto trading, and watching and playing sports mostly basketball and football.</p>
-    <p>Check out my <a href="ParthPatelIResumes.pdf" target="_blank">Resume</a>.</p>
-    <img src="yourphoto.jpg" alt="A photo of me" style="max-width:200px;">
+  <div class="container">
+    <h1>Your Name</h1>
+    <!-- Replace 'yourphoto.jpg' with the actual file name of your photo in the repository -->
+    <img src="yourphoto.jpg" alt="Your Name" class="profile-photo">
+
+    <p class="bio">
+      Short bio: I’m a student at Old Dominion University pursuing my Masters in Computer Science. I will be interning for AT&T over the summer in hopes for a full time position.
+    In my free time I enjoy playing video games such as call of duty, crypto trading, and watching and playing sports mostly basketball and football.
+    </p>
+
+    <!-- Replace 'YourResume.pdf' with the actual filename of your PDF resume in the repository -->
+    <a href="ParthPatelIResumes.pdf" target="_blank" class="resume-link">View My Resume</a>
+  </div>
 </body>
 </html>
