@@ -2,68 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hello, I'm Parth Patel</title>
+  <title>Your Name - Portfolio</title>
   <style>
-    /* Updated body styling with a fancy gradient background */
+    /* Apply a fancy animated gradient background to the whole page */
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      font-family: 'Helvetica', sans-serif;
       color: #333;
+      text-align: center;
       min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+    
+    /* Animation keyframes for background */
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    /* Style for the content container */
     .container {
       max-width: 600px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
+      width: 90%;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
-    h1 {
-      margin-bottom: 1rem;
-    }
-    .profile-photo {
+    
+    /* Style for your photo */
+    img {
       width: 150px;
       height: 150px;
-      object-fit: cover;
       border-radius: 50%;
-      border: 2px solid #333;
-      margin-bottom: 1rem;
+      border: 3px solid #333;
+      margin-bottom: 15px;
     }
-    .bio {
-      margin: 1rem 0;
-      line-height: 1.5;
-    }
-    a.resume-link {
+    
+    /* Style for the resume button */
+    a.button {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
+      padding: 10px 20px;
       background: #333;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
+      transition: background 0.3s ease;
     }
-    a.resume-link:hover {
+    
+    a.button:hover {
       background: #555;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1> Parth Patel </h1>
-    <!-- Replace 'yourphoto.jpg' with the actual file name of your photo -->
-    <img src="yourphoto.jpg" alt="Your Name" class="profile-photo">
-
-    <p class="bio">
-      Short bio: I’m a student at Old Dominion University pursuing my Masters in Computer Science. I will be interning for AT&T over the summer in hopes for a full time position.
-      In my free time I enjoy playing video games such as Call of Duty, crypto trading, and watching/playing sports—mostly basketball and football.
+    <h1>Parth Patel</h1>
+    <!-- Replace 'yourphoto.jpg' with the file name of your professional photo -->
+    <img src="yourphoto.jpg" alt="Your Name">
+    <p>
+      I’m a student at Old Dominion University pursuing my Masters in Computer Science. I will be interning for AT&T this summer, aiming for a full-time role. In my free time, I enjoy playing video games, crypto trading, and watching/playing sports—mostly basketball and football.
     </p>
-
-    <!-- Replace 'ParthPatelIResumes.pdf' with the actual filename of your PDF resume -->
-    <a href="ParthPatelIResumes.pdf" target="_blank" class="resume-link">View My Resume</a>
+    <!-- Replace 'YourResume.pdf' with your actual resume file name -->
+    <a href="ParthPatelIResumes.pdf" target="_blank" class="button">View My Resume</a>
   </div>
 </body>
 </html>
